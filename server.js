@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({
-  extended: false
+  extended: true
 }));
 var exphbs = require("express-handlebars");
 
